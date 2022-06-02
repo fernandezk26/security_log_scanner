@@ -17,42 +17,34 @@ for entry in log:
     if '0xC0000064' in entry:
         unknown_user_name_errors.append(entry)
 
-#extract the information needed from each entry
-#Example: 06/01 16:03:13 [LOGON] [20004] DomainInitials: SamLogon: Network logon of Domain\ComputerName from ComputerName Returns 0xC0000064
+#declare lists that will be used in uknown user password table in the csv later
 uu_date_time = []
 uu_computer_names = []
 uu_error_numbers = []
+#Find and extract specific information from the list to be written to their own columns in a csv file later
+#Example: 06/01 16:03:13 [LOGON] [20004] DomainInitials: SamLogon: Network logon of Domain\ComputerName from ComputerName Returns 0xC0000064
 for entry in unknown_user_name_errors:
-    #gather error numbers and append to list
     uu_error_numbers.append(entry.split("Returns")[1])
     uu_error_numbers = [i.strip() for i in uu_error_numbers]   
-    #gather computer names and append to list
     uu_computer_names.append(regex.search('from\ (.*?)\ Returns', entry).group(1))
-
-    #gather date/time and append to list
     uu_date_time.append(entry.split("[")[0])
 
 #iterate through the log and find bad password errors, append to list
-#Example: 06/01 16:07:31 [LOGON] [19920] DomainInitials: SamLogon: Transitive Network logon of WNSM\first.lastname from  (via DC) Returns 0xC000006A
 bad_password_errors = []
 for entry in log:
     if '0xC000006A' in entry:
         bad_password_errors.append(entry)
 
-print(bad_password_errors)
-#extract the information needed from each entry
+#declare lists that will be used in bad password table in csv later
 bp_date_time = []
 bp_user_name = []
 bp_error_numbers = []
+#Find and extract specific information from the list to be written to their own columns in a csv file later
+#Example: 06/01 16:07:31 [LOGON] [19920] DomainInitials: SamLogon: Transitive Network logon of WNSM\first.lastname from  (via DC) Returns 0xC000006A
 for entry in bad_password_errors:
-    #gather error numbers and append to list
     bp_error_numbers.append(entry.split("Returns")[1])
     bp_error_numbers = [i.strip() for i in bp_error_numbers]   
-    print(bp_error_numbers)
-    #gather computer names and append to list
     bp_user_name.append(regex.search('of\ (.*?)\ from', entry).group(1))
-
-    #gather date/time and append to list
     bp_date_time.append(entry.split("[")[0])
 
 #TO DO - ONCE I GET A FEW LOGS OF LOCKED OUT USERS I CAN UPDATE THE FIND EXPRESSION
