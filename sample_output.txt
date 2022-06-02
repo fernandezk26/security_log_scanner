@@ -1,0 +1,31 @@
+06/01 16:03:13 [LOGON] [20004] WNSM: SamLogon: Network logon of WNSM\4X0WF93$ from 4X0WF93 Returns 0xC0000064
+06/01 16:03:27 [LOGON] [28932] WNSM: SamLogon: Network logon of WNSM\83J1G63$ from 83J1G63 Returns 0xC0000064
+06/01 16:03:44 [LOGON] [20004] WNSM: SamLogon: Network logon of WNSM\4X0WF93$ from 4X0WF93 Returns 0xC0000064
+06/01 16:03:58 [LOGON] [20004] WNSM: SamLogon: Network logon of WNSM\83J1G63$ from 83J1G63 Returns 0xC0000064
+06/01 16:04:15 [LOGON] [28932] WNSM: SamLogon: Network logon of WNSM\4X0WF93$ from 4X0WF93 Returns 0xC0000064
+06/01 16:04:28 [LOGON] [20004] WNSM: SamLogon: Network logon of WNSM\83J1G63$ from 83J1G63 Returns 0xC0000064
+06/01 16:04:45 [LOGON] [19920] WNSM: SamLogon: Network logon of WNSM\4X0WF93$ from 4X0WF93 Returns 0xC0000064
+06/01 16:04:59 [LOGON] [19920] WNSM: SamLogon: Network logon of WNSM\83J1G63$ from 83J1G63 Returns 0xC0000064
+06/01 16:05:16 [LOGON] [11044] WNSM: SamLogon: Network logon of WNSM\4X0WF93$ from 4X0WF93 Returns 0xC0000064
+06/01 16:05:29 [LOGON] [28932] WNSM: SamLogon: Network logon of WNSM\83J1G63$ from 83J1G63 Returns 0xC0000064
+06/01 16:05:46 [LOGON] [11044] WNSM: SamLogon: Network logon of WNSM\4X0WF93$ from 4X0WF93 Returns 0xC0000064
+06/01 16:06:16 [LOGON] [20004] WNSM: SamLogon: Network logon of WNSM\83J1G63$ from 83J1G63 Returns 0xC0000064
+06/01 16:06:17 [LOGON] [20004] WNSM: SamLogon: Network logon of WNSM\4X0WF93$ from 4X0WF93 Returns 0xC0000064
+06/01 16:06:47 [LOGON] [20004] WNSM: SamLogon: Network logon of WNSM\83J1G63$ from 83J1G63 Returns 0xC0000064
+06/01 16:06:47 [LOGON] [20004] WNSM: SamLogon: Network logon of WNSM\4X0WF93$ from 4X0WF93 Returns 0xC0000064
+06/01 16:07:17 [LOGON] [19920] WNSM: SamLogon: Network logon of WNSM\83J1G63$ from 83J1G63 Returns 0xC0000064
+06/01 16:07:18 [LOGON] [11044] WNSM: SamLogon: Network logon of WNSM\4X0WF93$ from 4X0WF93 Returns 0xC0000064
+06/01 16:07:48 [LOGON] [11044] WNSM: SamLogon: Network logon of WNSM\83J1G63$ from 83J1G63 Returns 0xC0000064
+06/01 16:07:48 [LOGON] [19920] WNSM: SamLogon: Network logon of WNSM\4X0WF93$ from 4X0WF93 Returns 0xC0000064
+06/01 16:08:18 [LOGON] [19920] WNSM: SamLogon: Network logon of WNSM\83J1G63$ from 83J1G63 Returns 0xC0000064
+06/01 16:08:19 [LOGON] [31704] WNSM: SamLogon: Network logon of WNSM\4X0WF93$ from 4X0WF93 Returns 0xC0000064
+06/01 16:08:49 [LOGON] [31704] WNSM: SamLogon: Network logon of WNSM\83J1G63$ from 83J1G63 Returns 0xC0000064
+06/01 16:08:49 [LOGON] [31704] WNSM: SamLogon: Network logon of WNSM\4X0WF93$ from 4X0WF93 Returns 0xC0000064
+06/01 16:08:55 [LOGON] [31704] WNSM: SamLogon: Transitive Network logon of ADVANCED\247op from CAN-706-FPS01 (via TPN-702-OPS01) Returns 0xC0000064
+06/01 16:09:19 [LOGON] [20004] WNSM: SamLogon: Network logon of WNSM\83J1G63$ from 83J1G63 Returns 0xC0000064
+06/01 16:09:20 [LOGON] [20004] WNSM: SamLogon: Network logon of WNSM\4X0WF93$ from 4X0WF93 Returns 0xC0000064
+06/01 16:09:49 [LOGON] [19920] WNSM: SamLogon: Network logon of WNSM\83J1G63$ from 83J1G63 Returns 0xC0000064
+06/01 16:09:50 [LOGON] [20004] WNSM: SamLogon: Network logon of WNSM\4X0WF93$ from 4X0WF93 Returns 0xC0000064
+06/01 16:09:55 [LOGON] [19920] WNSM: SamLogon: Transitive Network logon of ADVANCED\247op from CAN-706-FPS01 (via TPN-702-OPS01) Returns 0xC0000064
+06/01 16:10:20 [LOGON] [19920] WNSM: SamLogon: Network logon of WNSM\83J1G63$ from 83J1G63 Returns 0xC0000064
+06/01 16:10:21 [LOGON] [19920] WNSM: SamLogon: Network logon of WNSM\4X0WF93$ from 4X0WF93 Returns 0xC0000064
