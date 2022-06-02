@@ -42,7 +42,7 @@ def scan_security_log(filePath):
     bp_user_name = []
     bp_error_numbers = []
     #Find and extract specific information from the list to be written to their own columns in a csv file later
-    #Example: 06/01 16:07:31 [LOGON] [19920] DomainInitials: SamLogon: Transitive Network logon of WNSM\first.lastname from  (via DC) Returns 0xC000006A
+    #Example: 06/01 16:07:31 [LOGON] [19920] DomainInitials: SamLogon: Transitive Network logon of Domain\first.lastname from  (via DC) Returns 0xC000006A
     for entry in bad_password_errors:
         bp_error_numbers.append(entry.split("Returns")[1])
         bp_error_numbers = [i.strip() for i in bp_error_numbers]   
@@ -66,7 +66,7 @@ def scan_security_log(filePath):
     today = date.today()
     filename = f"NetLogon_flagged_errors_{str(today)}.csv"
 
-    #check file path to make sure there is not any files with the same name, if there is, add a random number
+    #check file path to make sure there is not any files with the same name, if there is, add a random number to make the name unique
     data_directory = Path('C:\\Users\\kevin.fernandez\\Documents\\sample_logs')
     files = sorted(os.listdir(data_directory))
     for file in files:
@@ -87,8 +87,14 @@ def scan_security_log(filePath):
         wr.writerow(("Date", "User Name", "Error"))
         wr.writerows(bad_password_export_data)
 
+    #clear the log file
+    with open(path, 'w') as f:
+        pass
+
     myfile.close()
     return filename
+
+
 
 filename = scan_security_log(filePath=path)
 print(f"{filename} has been created")
